@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+:root{
+  --cor0: hsl(0, 100%, 67%) ;
+  --cor2: hsl(234, 85%, 45%) ;
+  --cor3: hsl(252, 100%, 67%);
+  --cor4: hsl(241, 81%, 54%);
+  --cor5: hsla(256, 72%, 46%, 1);
+  --cor6: hsla(241, 72%, 46%, 0);
+}
+
+
+body{
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+header{
+  background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+  border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+  
+
+}
+
+header>h1{
+  text-align: center;
+
+}
+
+.h1borda{
+  margin-top: 0px;
+
+}
+
+header>h2{
+  text-align: center;
+}
+
+header>p{
+  text-align: center;
+}
+
+.result{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-image:radial-gradient(circle,var(--cor6), var(--cor5));
+}
