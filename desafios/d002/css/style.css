@@ -83,7 +83,7 @@ margin: 0 1rem;
 .text h1 {
   color: var(--Dark-blue);
   padding-bottom: 1rem;
-
+  font-weight: 700;
 }
 
 .text p {
