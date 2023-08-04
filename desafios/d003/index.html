@@ -9,16 +9,22 @@
 <body>
   <main>
     <header>
-      <h1>freeCodeCamp Survey Form</h1>
-      <p>Thank you for taking the time to help us improve the platform</p>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
     </header>
-    <fieldset>
-      <label for="iname">Name</label>
-      <input type="text" name="name" id="iname">
+   
+      <form action="action.php">
+        <label for="iname">Name</label>
+        <input type="text" name="name" id="iname">
 
-      <label for="iemail">Email</label>
-      <input type="text" name="email" id="iemail">
-    </fieldset>
+        <label for="iemail">Email</label>
+        <input type="text" name="email" id="iemail">
+
+        <label for="iage">Age(optional)</label>
+        <input type="number" name="age" id="iage" min="13" max="120">
+
+        
+      </form>
   </main>
 </body>
 </html>
