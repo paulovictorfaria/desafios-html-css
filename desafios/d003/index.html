@@ -1,30 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form</title>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main>
-    <header>
-      <h1 id="title">freeCodeCamp Survey Form</h1>
-      <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <main class="container">
+    <header class="text-center">
+      <h1 id="title"><strong>freeCodeCamp Survey Form</strong></h1>
+      <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
     </header>
-   
-      <form action="action.php">
-        <label for="iname">Name</label>
-        <input type="text" name="name" id="iname">
+      
+    <form action="#" id="survey-form" method="post">
+      <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name" required>
 
-        <label for="iemail">Email</label>
-        <input type="text" name="email" id="iemail">
+            <label for="email" id="email-label">Email</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="Enter your email" required>
 
-        <label for="iage">Age(optional)</label>
-        <input type="number" name="age" id="iage" min="13" max="120">
+            <label for="number" id="number-label">Age(optional)</label>
+            <input class="form-control" type="number" name="age" id="number" min="10" max="120" placeholder="Age">
+      </div>
+      
+      <div class="form-group">
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select name="dropdown" id="dropdown" class="form-control" required>
+              <option value="" disabled selected>Select current role</option>
+              <option value="st">Student</option>
+              <option value="ftj">Full Time Job</option>
+              <option value="ftl">Full Time Learn</option>
+              <option value="pnts">Prefer not to say</option>
+              <option value="o">Other</option>
+            </select>
+      </div>
+      <div class="form-group">
+          <legend>Would you recommend freeCodeCamp to a friend?</legend>
+          
+          <p>
+            <label class="inline"for="idef">
+              <input type="radio" name="reco-fri"id="idef" value="def" checked>
+              Definitely
+            </label>
+          </p>
 
-        
-      </form>
+          <p>
+            <label class="inline"for="imaybe">
+              <input type="radio" name="reco-fri"id="imaybe" value="maybe"> Maybe
+            </label>
+          </p>
+          
+          <p>
+            <label class="inline" for="inotsure">
+              <input type="radio" name="reco-fri"id="inotsure" value="not"> Not sure
+            </label>
+          </p>
+      </div>
+                
+      <div class="form-group">
+          <label for="favorite">What is your favorite feature of freeCodeCamp?</label>
+            <select name="feature" id="favorite" class="form-control" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="cha">Challenges</option>
+              <option value="pro">Projects</option>
+              <option value="commu">Community</option>
+              <option value="open">Open source</option>
+            </select>
+      </div>
+          
+      <div class="form-group">
+          <legend>What would you like to see improved? (Check all that apply)</legend>
+          
+          <p><label class="inline" for="ifrontend">
+            <input type="checkbox" name="frontend" id="ifrontend" value="fron"> Front-end Projects
+          </label></p>
+          
+          <p><label class="inline" for="ibackend">
+            <input type="checkbox" name="backend" id="ibackend" value="back"> Back-end Projects
+          </label></p>
+          
+          <p><label class="inline" idata">
+            <input type="checkbox" name="data" id="idata" value="data"> Data Visualization
+          </label></p>
+          
+          <p><label class="inline" for="ichall">
+            <input type="checkbox" name="chall" id="ichall" value="chal"> Challenges
+          </label></p>
+          
+          <p><label class="inline" for="iopen">
+            <input type="checkbox" name="open" id="iopen" value="open"> Open Source Community
+          </label></p>
+          
+          <p><label class="inline" for="igitter">
+            <input type="checkbox" name="gitter" id="igitter" value="gitt"> Gitter help rooms
+          </label></p>
+          
+          <p><label class="inline" for="ivideos">
+            <input type="checkbox" name="videos" id="ivideos" value="vide"> Videos
+          </label></p>
+          
+          <p><label class="inline" for="icity">
+            <input type="checkbox" name="city" id="icity" value="city"> City Meetups
+          </label></p>
+          
+          <p><label class="inline" for="iwiki">
+            <input type="checkbox" name="wiki" id="iwiki" value="wiki"> Wiki
+          </label></p>
+          
+          <p><label class="inline" for="iforum">
+            <input type="checkbox" name="forum" id="iforum" value="foru"> Forum
+          </label></p>
+          
+          <p><label class="inline" for="iadd">
+            <input type="checkbox" name="add" id="iadd" value="addi"> Additional Courses
+          </label></p>
+      </div>
+          
+      <div class="form-group">
+          <label for="comment">Any comments or suggestions?</label>
+          <textarea name="comment" id="comment" cols="50" rows="6" placeholder="Enter your comment here..."></textarea>
+      </div>
+          
+      <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
   </main>
 </body>
 </html>
