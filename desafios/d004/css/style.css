@@ -1,0 +1,112 @@
+
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F0F2F5;
+}
+
+
+.container{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-conteudo{
+  display: flex;
+  align-items: center;
+}
+
+.box-titulo{
+  width: 500px;
+  padding-right: 32px;
+}
+
+.box-titulo p{
+  font-size: 28px;
+  line-height: 32px;
+}
+
+img{
+  width: 301px;
+  height: 106px;
+}
+
+.box-formulario{
+  max-width: 396px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  
+}
+
+input{
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  border-radius: 6px;
+  border: 1px solid lightgrey ;
+}
+
+.login{
+  padding: 10px;
+  margin: 10px 0;
+  width: 95%;
+  background-color: #1877F2;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+} 
+
+.esqueci-minha-senha{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.linha{
+  border-bottom: 1px solid lightgrey;
+  margin: 20px 10px;
+  height: 10px;
+  width: 90%;
+}
+
+.criar-conta
+{
+  background-color: #36A420;
+  color: white;
+  width: 50%;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 15px 0;
+}
+
+.subtitulo-borda{
+  font-size: 14px;
+margin: 28px 0px 0px ;
+text-align: center;
+}
+
+.subtitulo-borda a{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+a:hover{
+  text-decoration: underline;
+}
